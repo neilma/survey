@@ -17,11 +17,11 @@ describe Models::Response do
 
   describe 'attributes' do
     it 'returns email' do
-      expect(response.email).to eq(response_attributes[:email])
+      expect(response.participant.email).to eq(response_attributes[:email])
     end
 
-    it 'returns employee_id' do
-      expect(response.employee_id).to eq(response_attributes[:employee_id])
+    it 'returns participant_id' do
+      expect(response.participant.id).to eq(response_attributes[:employee_id])
     end
 
     it 'returns submitted_at' do
